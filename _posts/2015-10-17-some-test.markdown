@@ -30,7 +30,7 @@ print_hi('Tom')
 
 
 Также можно включать картинки:
-![Моё изображение](/assets/logo-2x.png)
+![Моё изображение]({{site.baseurl}}/assets/logo-2x.png)
 
 
 Сайт [Jekyll][jekyll]
