@@ -10,8 +10,13 @@
   */
 
     var disqus_config = function () {
-   // this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = page.id;// Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = page.url;// Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "my_" + page.id;// Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        //var disqus_shortname = 'my_shortname'; // Required - Replace example with your forum shortname
+        var disqus_identifier = 'my_' + page.id;
+        //var disqus_title = ' unique title for each page where Disqus is present';
+        //var disqus_url = 'a unique URL for each page where Disqus is present';
+
     };
 
  (function() {  // DON'T EDIT BELOW THIS LINE
