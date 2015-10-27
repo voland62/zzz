@@ -1,36 +1,18 @@
 <div id="disqus_thread"></div>
-<p>page.url:{{page.url}}</p>
-<p>page.id:{{page.id}}</p>
-<p>page.identifier:{{page.identifier}}</p>
 
 <script>
- /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-  */
-
-
- //var disqus_shortname = 'zzz-zzz'; // Required - Replace example with your forum shortname
- //var disqus_identifier = '{{page.id}}';
- //var disqus_title = "my_title_{{page.id}}";//' unique title for each page where Disqus is present';
- //var disqus_url = "{{page.url}}";  //'a unique URL for each page where Disqus is present';
- //console.log ("disqus_identifier:" + disqus_identifier);
- //console.log ("disqus_url:" + disqus_url);
-
-
-
     var disqus_config = function () {
-       //this.page.url = '{{page.url}}';// Replace PAGE_URL with your page's canonical URL variable
+       //this.page.url = "{{page.url}}";// Replace PAGE_URL with your page's canonical URL variable
        this.page.identifier = "{{page.id}}";// Replace PAGE_IDENTIFIER with your page's unique identifier variable
 
     };
 
- (function() {  // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
+ (function()
+     {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+         s.src = '//zzz-zzz.disqus.com/embed.js';
 
-     s.src = '//zzz-zzz.disqus.com/embed.js';
-
-     s.setAttribute('data-timestamp', +new Date());
-     (d.head || d.body).appendChild(s);
- })();
+         s.setAttribute('data-timestamp', +new Date());
+         (d.head || d.body).appendChild(s);
+     })();
 </script>
