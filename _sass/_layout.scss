@@ -1,3 +1,5 @@
+---
+---
 /**
  * Site header
  */
@@ -5,7 +7,7 @@
     border-top: 1px solid $grey-color-light;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-    background-image: url(/assets/Free-Seamless-Abstract-Textures-54.jpg);
+    background-image: url({{site.baseurl}}/assets/Free-Seamless-Abstract-Textures-54.jpg);
 
     // Positioning context for the mobile navigation icon
     position: relative;
